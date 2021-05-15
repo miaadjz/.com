@@ -1,112 +1,178 @@
-/*@import url()
-*/
 *
 {
     margin: 0;
-    padding: 0;
+    padding:0;
     box-sizing: border-box;
-    font-family: 'Poppins , sans-serif';
+    font-family: 'Monaco' ,Sans-serif;
 }
+
 body
 {
-    display: flex;
+    background: lightblue;
+    display:flex ;
     justify-content: center;
     align-items: center;
-    /*min-height: 100vh;
-   /* background: linear-gradient(135deg,#000033,#ab8ddd);*/
-}
-.headColor {
-
-background: linear-gradient(135deg,#491f8f,#041820);
-width: 100%;
-height: 300px;
-margin-left: 0px;
-margin-bottom:10px;
-margin-right: 0px;
-
+    min-height: 100vh ;
 
 }
-/*its for hover card version.
-.card
+
+.container
 {
-    top: 100px;
-    position: absolute;
-    
-    width: 450px;
-    height: 200px;
-    margin: 20px;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    border-radius: 10px;
-    background: linear-gradient(135deg,#d41e31,#491f8f);
-
-    background: linear-gradient(135deg,#000033,#ab8ddd);
-
+     position: relative;
+    width: 100%;
+    max-width:1000px;
+    min-height: 1000px;
+    margin:50px;
+    background: #fff;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 35px 55px rgba(0,0,0,1);
 
 }
-.card:hover {
 
-    width: 800px;
-    height: 400px;
-}
-.card img
+.container .left_Side
 {
-    position: absolute;
-    bottom:-90px;
-    left: 40%;
-    transform: translateX(-50%);
-    height: 500px;
-}
-.card:hover img
-{
-    left: 60%;
-    height:600px;
-    bottom:-110px;
-
-}
-*/
-.card
-{
-    top: 200px;
-    position: absolute;
-    width: 800px;
-    height: 200px;
-    margin: 20px;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    border-radius: 5px;
-    background: linear-gradient(135deg,#9c1a27,#3b1972);
-}
-
-.card img
-{
-    position: absolute;
-    transform: translateX(-50%);
-    left: 60%;
-    height:600px;
-    bottom:-110px;
-}
-.text
-{
-    color: silver;
     position: relative;
-    width: 300px;
-    left: 20px;
+    background: #003147;
+    padding: 40px;
 }
-.text :hover {
-    text-emphasis: size 20px;
-    width: 100px;
-    left: 20px;
+
+.profiletext
+{
+    position: relative;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(199, 199, 174, 0.2);
+}
+
+.profiletext .imgBx
+{
+position : relative ;
+width : 200px;
+height: 200px;
+border-radius: 50%;
+overflow: hidden;
+}
+
+.profiletext .imgBx img
+{
+    position: absolute;
+    top: 0px;
+    left:0;
+    width:100%;
+    height: 105%;
+    object-fit:cover ;
+}
+
+.profiletext h2
+{
+    color: #fff;
+    font-size: 1.5em;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.4em;
+}
+
+.profiletext h2 span 
+{
+    font-size: 0.8em;
+    font-weight: 300;
+}
+
+.contentInfo
+{
+padding-top: 40px;
+}
+
+.title
+{
+    color : #fff;
+    text-transform : uppercase ; 
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
 
 }
-.syntax {
-    position: absolute;
-    width: 900px;
-    height: 200px;
-    margin: 200px;
-    top: 300px;
-    font-size: 25px;
-    
+
+.contentInfo ul
+{
+    position : relative ;
+
 }
+
+.contentInfo ul li
+{
+    position : relative ;
+    list-style: none;
+    margin: 10px 0 ;
+    cursor:pointer;
+}
+
+.contentInfo ul li .icon
+{
+display: inline-block;
+width:30px;
+font-size: 18px;
+color: #03a9f4;
+
+}
+.contentInfo ul li span
+{
+    color:#fff ;
+    font-weight: 300;
+}
+
+.contentInfo.education li
+{
+ margin-bottom: 15px ;
+}
+
+.contentInfo.education h5
+{
+color: #03a9f4;
+font-weight: 500 ;
+}
+.contentInfo.education h4:nth-child(2)
+{
+    color: #fff;
+    font-weight: 500 ;
+    }
+
+.contentInfo.education h4
+{
+    color: #fff;
+    font-weight: 300 ;
+    }
+
+.contentInfo.language .percent
+{
+    position: relative;
+    width: 100%;
+    height: 6px;
+    background: #081921;
+    display:block;
+    margin-top:5px;
+
+
+}
+
+.contentInfo.language .percent div
+{
+ position: absolute;
+ top:0;
+ left: 0;
+ height: 100%;
+ background: #03a9f4;
+}
+
+.container .right_Side
+{
+    position: relative;
+    background: #fff;
+    padding: 40px;
+}
+
